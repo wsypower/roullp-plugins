@@ -2,15 +2,15 @@
  * @Description:
  * @Author: wsy
  * @Date: 2023-04-20 22:20:59
- * @LastEditTime: 2023-04-20 22:50:50
+ * @LastEditTime: 2023-04-21 12:45:56
  * @LastEditors: wsy
  */
 import typescript from '@rollup/plugin-typescript'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
-import type { Plugin, RollupOptions } from 'rollup'
+import { defineConfig } from 'rollup'
 
-export default {
+export default defineConfig({
   input: 'src/index.ts',
   output: {
     file: 'dist/bundle.js',
@@ -21,4 +21,4 @@ export default {
     commonjs(),
     typescript(),
   ],
-}
+})

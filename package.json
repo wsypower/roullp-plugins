@@ -8,7 +8,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "rollup": "rollup -c",
+    "rollup": "rollup --config rollup.config.ts --configPlugin typescript",
     "build": "ts-node-esm debugger",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
